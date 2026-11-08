@@ -1,0 +1,5 @@
+preview/
+__pycache__/
+vo/*.aiff
+vo/mix.wav
+.DS_Store

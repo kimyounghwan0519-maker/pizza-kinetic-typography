@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>피자 프랜차이즈 EDA · 키네틱 타이포그래피</title>
+<meta name="description" content="피자 프랜차이즈 9개 매장, 6년 실적 데이터의 시사점 3개를 30초 키네틱 타이포그래피로.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0d0b13; --ink:#f6f4fa; --grey:#8a849b; --p:#7823dc; --p2:#aa78f5; --line:#262133; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--ink); font-family:'Noto Sans KR',system-ui,sans-serif; line-height:1.6; }
+  .wrap { max-width:1100px; margin:0 auto; padding:56px 16px 80px; }
+  .eyebrow { color:var(--p2); font-weight:700; letter-spacing:.12em; font-size:13px; text-transform:uppercase; }
+  h1 { font-size:clamp(30px,5vw,52px); font-weight:900; line-height:1.2; margin:10px 0 14px; letter-spacing:-.02em; }
+  h1 em { font-style:normal; color:var(--p2); }
+  .lead { color:var(--grey); font-size:17px; max-width:720px; }
+  video { display:block; width:100%; margin:36px 0 12px; border-radius:14px; background:#000;
+          box-shadow:0 0 0 1px var(--line), 0 30px 80px -30px rgba(120,35,220,.55); }
+  .bar { height:4px; width:120px; background:var(--p); border-radius:2px; margin:48px 0 28px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+  .card { border:1px solid var(--line); border-radius:12px; padding:22px; background:#13101b; }
+  .card .n { color:var(--p2); font-weight:900; font-size:14px; }
+  .card h3 { font-size:20px; margin:6px 0 8px; font-weight:700; }
+  .card p { color:var(--grey); font-size:15px; }
+  .card b { color:var(--ink); }
+  footer { margin-top:56px; color:var(--grey); font-size:13px; border-top:1px solid var(--line); padding-top:20px; }
+  a { color:var(--p2); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="eyebrow">Pizza Franchise · EDA 2020–2026</div>
+  <h1>성장을 만든 건 고객이 아니라, <em>가격</em>이었다</h1>
+  <p class="lead">피자 프랜차이즈 9개 매장의 6년치 월별 실적(720건)을 분석해 경영 시사점 3개를 뽑고, 30초 키네틱 타이포그래피로 만들었습니다. 영상은 코드만으로 렌더링했습니다.</p>
+
+  <video src="kinetic_insights.mp4" controls playsinline preload="metadata" poster="poster.png"></video>
+
+  <div class="bar"></div>
+  <div class="grid">
+    <div class="card"><div class="n">01 · 성장의 질</div><h3>물량이 아니라 가격으로 성장</h3>
+      <p>2022→2025 매출 <b>+17%</b>, 주문 <b>-1%</b>, 객단가 <b>+19%</b>. 신규 고객과 재방문율은 정체.</p></div>
+    <div class="card"><div class="n">02 · 수익성</div><h3>이익 없는 성장, 주범은 인건비</h3>
+      <p>매출 +17% 동안 이익은 <b>+9%</b>. 인건비율 <b>24.5% → 29.0%</b>(2020 → 2026).</p></div>
+    <div class="card"><div class="n">03 · 매장 격차</div><h3>두 매장이 뒤처지고 있다</h3>
+      <p>2026년 1~8월 이익률: 광주 충장로 <b>13.2%</b>, 제주 연동 <b>14.2%</b>. 나머지 7개 매장 평균 18.3%.</p></div>
+  </div>
+
+  <footer>가상 데이터 기반 실습 결과물 · Python(Pillow) + ffmpeg로 렌더링, 내레이션 macOS TTS · 강조색 #7823DC</footer>
+</main>
+</body>
+</html>
